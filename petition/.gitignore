@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.env
+.venv/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# VS Code
+.vscode/
+
+# Node
+node_modules/
+*.log
+
+# React build
+frontend/dist/
+frontend/build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env.*
+
+# Misc
+*.sqlite3
+*.db
+
+# Coverage
+htmlcov/
+.coverage
+coverage.xml
+
+# Uvicorn logs
+*.log
+
+# Local settings
+settings_local.py
