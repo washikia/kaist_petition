@@ -11,7 +11,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from backend import models
 from backend.database import engine
-from backend.routers import signature 
+from backend.routers import signature, admin
 
 # ... (lifespan manager code remains the same) ...
 @asynccontextmanager
@@ -28,6 +28,7 @@ app = FastAPI(lifespan=lifespan)
 # --- INCLUDE THE ROUTER ---
 # This line adds all the routes from signature.py to your main app
 app.include_router(signature.router)
+app.include_router(admin.router)
 
 # --- CORS MIDDLEWARE ---
 # ... (rest of the file is the same) ...
