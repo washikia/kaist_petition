@@ -1,5 +1,9 @@
 # backend/routers/admin.py
 
+import io
+import csv
+from fastapi.responses import StreamingResponse
+
 import os
 from fastapi import APIRouter, Depends, HTTPException, status, Header
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -66,3 +70,51 @@ async def reset_database(db: AsyncSession = Depends(get_db)):
     print("--- ADMIN ACTION: Database has been reset ---")
     # A 204 response has no body, so we return nothing.
     return
+
+
+
+# --- Endpoint 3: Download Signatures as a CSV File ---
+@router.get(
+    "/signatures/csv",
+    dependencies=[Depends(verify_admin_key)] # This SECURES the endpoint
+)
+async def download_all_signatures_as_csv(db: AsyncSession = Depends(get_db)):
+    """
+    Downloads a complete CSV file of all signatories.
+    Requires a valid 'x-admin-key' in the request header.
+    """
+    # 1. Fetch all signatories from the database
+    result = await db.execute(select(models.Signatory).order_by(models.Signatory.id))
+    all_signatures = result.scalars().all()
+
+    # 2. Create a CSV in memory
+    output = io.StringIO()
+    writer = csv.writer(output)
+
+    # 3. Write the header row
+    header = [
+        'id', 'name', 'email', 'affiliation', 'is_anonymous',
+        'is_verified', 'created_at'
+    ]
+    writer.writerow(header)
+
+    # 4. Write the data rows
+    for sig in all_signatures:
+        writer.writerow([
+            sig.id,
+            sig.name,
+            sig.email,
+            sig.affiliation,
+            sig.is_anonymous,
+            sig.is_verified,
+            sig.created_at.strftime("%Y-%m-%d %H:%M:%S") # Format datetime nicely
+        ])
+
+    # 5. Prepare the response to trigger a file download
+    output.seek(0) # Go back to the beginning of the in-memory file
+    response = StreamingResponse(
+        iter([output.getvalue()]),
+        media_type="text/csv",
+        headers={"Content-Disposition": f"attachment; filename=signatures_{len(all_signatures)}.csv"}
+    )
+    return response
