@@ -5,9 +5,9 @@ from fastapi import APIRouter, Depends, HTTPException, status, BackgroundTasks
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
 
-from petition.backend import models, schemas
-from petition.backend.database import get_db
-from petition.backend.email_service import send_verification_email
+from backend import models, schemas
+from backend.database import get_db
+from backend.email_service import send_verification_email
 
 # APIRouter allows us to create a modular set of routes
 router = APIRouter(

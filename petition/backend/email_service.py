@@ -8,11 +8,11 @@ from pathlib import Path
 
 # --- REVISED .ENV LOADING ---
 # 1. Define the path to the 'backend' directory
-# backend_dir = Path(__file__).parent 
+backend_dir = Path(__file__).parent 
 # 2. Define the full path to the .env file
-# dotenv_path = backend_dir / '.env'
+dotenv_path = backend_dir / '.env'
 # 3. Load the .env file from that specific path
-load_dotenv(os.getenv("DOTENV_PATH"))
+load_dotenv(dotenv_path=dotenv_path)
 
 # Get email credentials from environment variables
 EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS")

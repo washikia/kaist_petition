@@ -1,12 +1,17 @@
 # backend/main.py
 
+import sys
+import os
+# Add the parent directory (petition) to the Python path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from petition.backend import models
-from petition.backend.database import engine
-from petition.backend.routers import signature 
+from backend import models
+from backend.database import engine
+from backend.routers import signature 
 
 # ... (lifespan manager code remains the same) ...
 @asynccontextmanager
