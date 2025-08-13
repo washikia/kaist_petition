@@ -18,7 +18,7 @@ from backend.routers import signature
 async def lifespan(app: FastAPI):
     print("Application startup: Creating database tables...")
     async with engine.begin() as conn:
-        await conn.run_sync(models.Base.metadata.create_all)
+        await conn.run_sync(models.Base.metadata.create_all, checkfirst=True)
     print("Application startup: Database tables created.")
     yield
     print("Application shutdown.")
