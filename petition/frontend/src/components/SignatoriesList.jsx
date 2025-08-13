@@ -13,7 +13,7 @@ export default function SignatoriesList() {
     const fetchSignatories = async () => {
       try {
         // Fetch data from our backend's public endpoint
-        const response = await axios.get('http://127.0.0.1:8000/api/signature/');
+        const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/signature/`);
         setSignatories(response.data);
         setError(null);
       } catch (err) {

@@ -23,7 +23,7 @@ export default function VerificationPage() {
       try {
         // Make the GET request to our backend verification endpoint
         // Note: The token is part of the URL, not a query parameter.
-        const response = await axios.get(`http://127.0.0.1:8000/api/signature/verify/${token}`);
+        const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/signature/verify/${token}`);
 
         // If the request is successful (200 OK)
         console.log('Verification successful:', response.data);

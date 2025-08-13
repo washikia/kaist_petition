@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 // Define your backend API URL
-const API_URL = 'http://127.0.0.1:8000/api/signature';
+const API_URL = import.meta.env.VITE_API_URL + '/api/signature';
 
 export default function SignatureForm() {
   const navigate = useNavigate(); // Hook for navigation
