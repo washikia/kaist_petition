@@ -6,18 +6,18 @@ from email.message import EmailMessage
 from dotenv import load_dotenv
 from pathlib import Path 
 
-# --- REVISED .ENV LOADING ---
-# 1. Define the path to the 'backend' directory
-backend_dir = Path(__file__).parent 
-# 2. Define the full path to the .env file
-dotenv_path = backend_dir / '.env'
-# 3. Load the .env file from that specific path
+# --- .ENV LOADING ---
+# Find the project root by going up one directory from this file's parent (backend)
+project_root = Path(__file__).resolve().parent.parent
+dotenv_path = project_root / 'backend' / '.env'
 load_dotenv(dotenv_path=dotenv_path)
 
 # Get email credentials from environment variables
 EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS")
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
-print(EMAIL_ADDRESS, EMAIL_PASSWORD)
+
+# Use the environment variable, but have a fallback for local development
+FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:5173")
 
 def send_verification_email(to_email: str, token: str):
     # Ensure credentials are set
@@ -26,7 +26,7 @@ def send_verification_email(to_email: str, token: str):
         return
 
     # Create the verification link
-    verification_link = f"http://localhost:5173/verify/{token}"
+    verification_link = f"{FRONTEND_URL}/verify/{token}"
 
     # Create the email message
     msg = EmailMessage()
