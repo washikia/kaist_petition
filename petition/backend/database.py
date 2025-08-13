@@ -4,7 +4,9 @@ from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker
 from sqlalchemy.orm import declarative_base
 
 # Get the database URL from the environment variable
-DATABASE_URL = os.getenv("DATABASE_URL")
+# DATABASE_URL = os.getenv("DATABASE_URL")
+
+DATABASE_URL = "postgresql://petition_user:AsJdVQeGvCVwlCSmr8cAEwEQkI9MyHpo@dpg-d2e3io3uibrs738kvlf0-a/petition_db_otoe"
 
 # If the URL is for postgres, we need to adapt it for async usage
 if DATABASE_URL and DATABASE_URL.startswith("postgres://"):
