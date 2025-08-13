@@ -33,6 +33,7 @@ app.include_router(signature.router)
 # ... (rest of the file is the same) ...
 origins = [
     "http://localhost:5173",
+    "https://kaist-petition.vercel.app"
 ]
 app.add_middleware(
     CORSMiddleware,
