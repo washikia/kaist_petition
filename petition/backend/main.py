@@ -4,9 +4,9 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from . import models
-from .database import engine
-from .routers import signature  # <-- IMPORT YOUR NEW ROUTER
+from petition.backend import models
+from petition.backend.database import engine
+from petition.backend.routers import signature 
 
 # ... (lifespan manager code remains the same) ...
 @asynccontextmanager

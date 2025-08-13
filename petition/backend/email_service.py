@@ -4,7 +4,7 @@ import os
 import smtplib
 from email.message import EmailMessage
 from dotenv import load_dotenv
-from pathlib import Path # <-- Import the Path object
+from pathlib import Path 
 
 # --- REVISED .ENV LOADING ---
 # 1. Define the path to the 'backend' directory

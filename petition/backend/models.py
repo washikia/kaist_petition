@@ -2,7 +2,7 @@
 
 from sqlalchemy import Boolean, Column, Integer, String, DateTime
 from sqlalchemy.sql import func
-from .database import Base
+from petition.backend.database import Base
 
 class Signatory(Base):
     __tablename__ = "signatories"
