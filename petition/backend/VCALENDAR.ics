@@ -1,0 +1,169 @@
+BEGIN:VCALENDAR
+METHOD:REQUEST
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:W. Europe Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=-1SU;BYMONTH=10
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=-1SU;BYMONTH=3
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=André Hau:mailto:andre.hau@moldflow.eu
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=ahmedwashi
+ k@atechsolution.co.kr:mailto:ahmedwashik@atechsolution.co.kr
+ATTENDEE;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Bernd Mart
+ ens:mailto:bernd.martens@moldflow.eu
+DESCRIPTION;LANGUAGE=de-DE:Dear Washik\,\n\nplease find here the invitation
+  for our meeting regarding our Report Generator.\n\nWe are looking forward
+  to this meeting and wish you a nice weekend\,\n\nAndré\n________________
+ ________________\nFrom: André Hau <andre.hau@moldflow.eu>\nSent: Thursday
+ \, August 28\, 2025 7:54:55 AM\nTo: ahmedwashik@atechsolution.co.kr <ahmed
+ washik@atechsolution.co.kr>\nCc: Bernd Martens <bernd.martens@moldflow.eu>
+ \nSubject: AW: AW: Inquiry from A-Tech Solution: MoldFlow Automatic Report
+ Generation\n\nDear Washik\,\n\nI will clarify with my colleague who should
+  also attend the meeting and will send you a Teams invitation afterwards. 
+ Tomorrow is not possible\, so it will probably be Tuesday. I'll coma back 
+ to you asap.\n\nBest regards\,\n\nAndré\n\n\n____________________________
+ ____\nVon: 와식 <ahmedwashik@atechsolution.co.kr>\nGesendet: Donnerstag\
+ , 28. August 2025 06:22\nBis: André Hau <andre.hau@moldflow.eu>\nBetreff:
+  Re: AW: Inquiry from A-Tech Solution: MoldFlow Automatic ReportGeneration
+ \n\n\nDear André\,\n\nThank you for your response.\n\nPlease let me know 
+ your availability tomorrow (29th August) or Tuesday (2nd September) at 4 p
+ .m. KST.\n\n\nBest regards\,\n\nWashik\n\n\n----------Original Message----
+ ------\nFrom: "André Hau"<andre.hau@moldflow.eu>\nTo: "ahmedwashik@atechs
+ olution.co.kr" <ahmedwashik@atechsolution.co.kr>\;\nCc: "Bernd Martens" <b
+ ernd.martens@moldflow.eu>\;"Jeong Hyeon-jin" <skyl0927@atechsolution.co.kr
+ >\;\nDate: 2025-08-26 16:00:00\nSubject: AW: Inquiry from A-Tech Solution:
+  MoldFlow Automatic ReportGeneration\n\nHello Washik\,\n\nthanks a lot for
+  your inquiry. In principle I can confirm that it is possible with our rep
+ ort generator to create such a PowerPoint report. Some details for sure ne
+ ed to be clarified because not all results in Synergy can be created autom
+ atically.\n\nI would propose to set-up a Teams Meeting to discuss your req
+ uirements in detail and to show you what our report generator is able to d
+ o or which additional functionality maybe needs to be added to fulfill all
+  your requirements. After that it is of course possible to provide you wit
+ h a trial license so that you can test it internally.\n\nPlease let me kno
+ w your availability in the next days. Due to the time-shift to South Korea
+  a meeting at 4 p.m. your time would fit best for us.\n\nLooking forward t
+ o your response and have a nice day\,\n\nAndré\n\n\n\n[https://outlook.of
+ fice.com/mail/inbox/id/AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0ATVroy0v6r0%2B
+ c1%2FSV%2FnI08QADy99UKQAA?nativeVersion=1.2025.806.300]\n\n\n\nANDRÉ HAU\
+ n\nVertriebsleitung / Sales Director\n\n\n\n\n\nMF SOFTWARE GmbH\n\nRobert
+ -Bosch-Strasse 7 - 64293 Darmstadt\n\nTEL\n\nMOBIL\n\n+49 (6151) 8504 - 17
+ 2\n\n+49 (173) 7065817\n\nMAIL\n\nandre.hau@moldflow.eu<mailto:andre.hau@m
+ oldflow.eu>\n\nWEB\n\nwww.moldflow.eu<http://www.moldflow.eu/>\n\n\n\n\n\n
+  LinkedIn<https://www.linkedin.com/company/moldflowsoftware/>\n\nYouTube<h
+ ttps://www.youtube.com/%40moldflow>\n\nNewsletter<https://www.moldflow.eu/
+ newsletter/>\n\n\n\nMF SOFTWARE Sales & Service Group GmbH\n\nSitz der Ges
+ ellschaft: Darmstadt\n\nRegistergericht: Amtsgericht Darmstadt: HRB 88187\
+ n\nGeschäftsführer: Dipl.-Ing. Sven Theissen\n\n\n\nUSt-ID / VAT: DE 266
+  628 542\n\n\n\nDiese Information ist ausschlielich für den Adressaten be
+ stimmt und kann vertraulich oder gesetzlich geschtzte Informationen enthal
+ ten. Wenn Sie nicht der bestimmungsgeme Adressat sind\, unterrichten Sie b
+ itte den Absender und vernichten Sie diese Mail. Anderen als dem bestimmun
+ gsgemen Adressaten ist es untersagt\, diese E-Mail zu lesen\, zu speichern
+ \, weiterzuleiten oder ihren Inhalt auf welche Weise auch immer zu verwend
+ en.Wir verwenden aktuelle Virenschutzprogramme. Für Schäden\, die dem Em
+ pfänger gleichwohl durch von uns zugesandte mit Viren befallene E-Mails e
+ ntstehen\, schliessen wir jede Haftung aus.\n\n\n\nThe information contain
+ ed in this email is intended only for its addressee and may contain confid
+ ential and/or privileged information. If the reader of this email is not t
+ he intended recipient\, you are hereby notified that reading\, saving\, di
+ stribution or use of the content of this email in any way is prohibited. I
+ f you have received this email in error\, please notify the sender and del
+ ete the email. We use updated antivirus protection software. We do not acc
+ ept any responsibility for damages caused anyhow by viruses transmitted vi
+ a email.\n\n\n\n\n________________________________\nVon: 와식 <ahmedwash
+ ik@atechsolution.co.kr>\nGesendet: Montag\, 25. August 2025 02:14\nAn: Kon
+ takt (MFS) <kontakt@moldflow.eu>\nCc: Jeong Hyeon-jin <skyl0927@atechsolut
+ ion.co.kr>\nBetreff: Inquiry from A-Tech Solution: MoldFlow Automatic Repo
+ rt Generation\n\n\nDear MF Software Team\,\n\nMy name is Washik\, and I am
+  an AI Developer at A-Tech Solution\, a mold manufacturing company based i
+ n South Korea.\n\n\nWe are exploring solutions to automate our MoldFlow re
+ port generation\, as the standard functionality does not meet our specific
+  customization requirements. We are very interested in learning if your so
+ ftware can provide the flexibility we need.\n\n\nTo help us evaluate your 
+ product\, I have attached a sample of our desired report format. Could you
+  please review it and confirm if this level of customization is achievable
+  with your tool?\n\n\nAdditionally\, we would be grateful for information 
+ on how we can arrange for a trial or a product demonstration to assess its
+  fit for our workflow.\n\n\nWe look forward to hearing from you soon.\n\n\
+ nBest regards\,\n\nWashik\n\nAI Developer\n\nA-Tech Solution\n\n+82 10-213
+ 1-3143\n\nahmedwashik@atechsolution.co.kr\n\nhttps://www.atechsolution.co.
+ kr/wp/?lang=en\n\n\n[https://outlook.office.com/mail/inbox/id/AAkALgAAAAAA
+ HYQDEapmEc2byACqAC%2FEWg0ATVroy0v6r0%2Bc1%2FSV%2FnI08QADy99UKQAA?nativeVer
+ sion=1.2025.806.300]\n[https://outlook.office.com/mail/inbox/id/AAkALgAAAA
+ AAHYQDEapmEc2byACqAC%2FEWg0ATVroy0v6r0%2Bc1%2FSV%2FnI08QADy99UKQAA?nativeV
+ ersion=1.2025.806.300]\n\n________________________________________________
+ ________________________________\nMicrosoft Teams Benötigen Sie Hilfe?<ht
+ tps://aka.ms/JoinTeamsMeeting?omkt=de-DE>\nJetzt an der Besprechung teilne
+ hmen<https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDUzNDMzNzEtND
+ kyMy00NmRiLTk4MDYtNDBiZmE1NmIwZTg2%40thread.v2/0?context=%7b%22Tid%22%3a%2
+ 233485f61-374e-47ff-98c5-fd87e1239780%22%2c%22Oid%22%3a%2299a8530c-5547-48
+ 0e-889c-39f03075b693%22%7d>\nBesprechungs-ID: 338 098 225 690\nKennung: vo
+ 2tG2xo\n________________________________\nFür Organisatoren: Besprechungs
+ optionen<https://teams.microsoft.com/meetingOptions/?organizerId=99a8530c-
+ 5547-480e-889c-39f03075b693&tenantId=33485f61-374e-47ff-98c5-fd87e1239780&
+ threadId=19_meeting_ZDUzNDMzNzEtNDkyMy00NmRiLTk4MDYtNDBiZmE1NmIwZTg2@threa
+ d.v2&messageId=0&language=de-DE>\n________________________________________
+ ________________________________________\n
+UID:040000008200E00074C5B7101A82E0080000000011263A78C618DC01000000000000000
+ 01000000062C6A0D3DBF68C4CA24A2EE9805A4979
+SUMMARY;LANGUAGE=de-DE:RE: AW: Inquiry from A-Tech Solution: MoldFlow Autom
+ atic ReportGeneration
+DTSTART;TZID=W. Europe Standard Time:20250902T090000
+DTEND;TZID=W. Europe Standard Time:20250902T100000
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20250829T092453Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+LOCATION;LANGUAGE=de-DE:Microsoft Teams-Besprechung
+X-MICROSOFT-CDO-APPT-SEQUENCE:0
+X-MICROSOFT-CDO-OWNERAPPTID:2123950164
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-ONLINEMEETINGINFORMATION:{"OnlineMeetingChannelId":null\,"Onlin
+ eMeetingProvider":3}
+X-MICROSOFT-SKYPETEAMSMEETINGURL:https://teams.microsoft.com/l/meetup-join/
+ 19%3ameeting_ZDUzNDMzNzEtNDkyMy00NmRiLTk4MDYtNDBiZmE1NmIwZTg2%40thread.v2/
+ 0?context=%7b%22Tid%22%3a%2233485f61-374e-47ff-98c5-fd87e1239780%22%2c%22O
+ id%22%3a%2299a8530c-5547-480e-889c-39f03075b693%22%7d
+X-MICROSOFT-SCHEDULINGSERVICEUPDATEURL:https://api.scheduler.teams.microsof
+ t.com/teams/33485f61-374e-47ff-98c5-fd87e1239780/99a8530c-5547-480e-889c-3
+ 9f03075b693/19_meeting_ZDUzNDMzNzEtNDkyMy00NmRiLTk4MDYtNDBiZmE1NmIwZTg2@th
+ read.v2/0
+X-MICROSOFT-SKYPETEAMSPROPERTIES:{"cid":"19:meeting_ZDUzNDMzNzEtNDkyMy00NmR
+ iLTk4MDYtNDBiZmE1NmIwZTg2@thread.v2"\,"rid":0\,"mid":0\,"uid":null\,"priva
+ te":true\,"type":0}
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-REQUESTEDATTENDANCEMODE:DEFAULT
+X-MICROSOFT-ISRESPONSEREQUESTED:TRUE
+X-MICROSOFT-LOCATIONDISPLAYNAME:Microsoft Teams-Besprechung
+X-MICROSOFT-LOCATIONSOURCE:None
+X-MICROSOFT-LOCATIONS:[{"DisplayName":"Microsoft Teams-Besprechung"\,"Locat
+ ionAnnotation":""\,"LocationUri":""\,"LocationStreet":""\,"LocationCity":"
+ "\,"LocationState":""\,"LocationCountry":""\,"LocationPostalCode":""\,"Loc
+ ationFullAddress":""}]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT15M
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR
